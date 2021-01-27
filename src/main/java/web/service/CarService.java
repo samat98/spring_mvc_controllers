@@ -27,7 +27,8 @@ public class CarService {
         cars.add(car5);
     }
 
-    public List<Car> getCars(int count) {
-        return cars.subList(0, count);
+    public List<Car> getCars(Integer count) {
+        int tmp = (count != null) ? count : 5;
+        return cars.subList(0, tmp);
     }
 }
